@@ -14,6 +14,7 @@ def search():
    time.sleep(2)
 
    buttonx, buttony = pyautogui.locateCenterOnScreen('images/ok.png', confidence=.7)
+   time.sleep(1)
    pyautogui.click(buttonx, buttony)
 
    accepter()
