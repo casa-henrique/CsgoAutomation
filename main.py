@@ -8,13 +8,13 @@ def logIn():
 def search():
  while True:
   try:
-   buttonx, buttony = pyautogui.locateCenterOnScreen('play.png', confidence=.7)
+   buttonx, buttony = pyautogui.locateCenterOnScreen('images/play.png', confidence=.7)
    pyautogui.click(buttonx, buttony)
  
    time.sleep(2)
 
-   okx, oky = pyautogui.locateCenterOnScreen('ok.png', confidence=.7)
-   pyautogui.click(okx, oky)
+   buttonx, buttony = pyautogui.locateCenterOnScreen('images/ok.png', confidence=.7)
+   pyautogui.click(buttonx, buttony)
 
    accepter()
   except:
@@ -23,7 +23,7 @@ def search():
 def accepter():
  while True:
   try:
-   buttonx, buttony = pyautogui.locateCenterOnScreen('button.png', confidence=.7)
+   buttonx, buttony = pyautogui.locateCenterOnScreen('images/button.png', confidence=.7)
   
    pyautogui.click(buttonx, buttony)
  
